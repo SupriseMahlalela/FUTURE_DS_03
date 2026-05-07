@@ -72,14 +72,25 @@ Dataset: 30,000 user sessions with traffic source, device, demographic, and conv
 8	Geographic Chart	Top 10 countries performance
 9	Complete Dashboard	All key visuals combined
 
-🛠️ Technologies Used
-Tool	Purpose
-Python	Data cleaning & analysis
-Pandas	Data manipulation
-Dask	Large dataset handling
-Matplotlib	Static visualizations
-Power BI	Interactive dashboard
-DAX	Measures & calculations
+---
+
+## 🛠️ Technologies Used
+
+| Tool | Purpose |
+|------|---------|
+| Python | Data cleaning & analysis |
+| Pandas | Data manipulation |
+| Matplotlib | Static visualizations |
+| Power BI | Interactive dashboard |
+| DAX | Measures & calculations |
+
+---
+
+## 📦 Setup
+
+**Install dependencies:**
+```bash
+pip install pandas numpy matplotlib jupyter dask[dataframe]
 
 📦 Installation & Setup
 Prerequisites
