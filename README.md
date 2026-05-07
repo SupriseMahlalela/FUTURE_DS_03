@@ -1,6 +1,3 @@
-# FUTURE_DS_03
-
-
 📊 Marketing Funnel Analysis Dashboard
 Project Overview
 This project provides a complete marketing funnel analysis to identify conversion drop-offs, channel performance, and opportunities to improve lead-to-customer conversion using real e-commerce data.
