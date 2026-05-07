@@ -5,74 +5,63 @@ This project provides a complete marketing funnel analysis to identify conversio
 Dataset: 30,000 user sessions with traffic source, device, demographic, and conversion data.
 
 🎯 Key Business Questions Answered
-Question	Answer
-Where are users dropping off?	81.4% drop between engagement and conversion
-Which channel performs best?	Referral (10.4% purchase rate)
-What is lead-to-customer rate?	9.97% (2,992 purchases from 30,000 sessions)
-How to improve conversion?	Cart abandonment emails, mobile optimization, channel reallocation
-📁 Project Structure
-text
-marketing-funnel-analysis/
-│
-├── data/
-│   └── CleanedSpeakerData_fixed.csv          # Cleaned dataset (30,000 rows)
-│
-├── notebooks/
-│   ├── 01_complete_analysis.ipynb            # EDA + funnel + channel analysis
-│   └── 02_visualizations.ipynb               # All charts and graphs
-│
-├── powerbi/
-│   └── funnel_dashboard.pbix                 # Interactive Power BI dashboard
-│
-├── reports/
-│   ├── channel_performance.csv               # Channel metrics export
-│   ├── demographic_analysis.csv              # Age & gender insights
-│   ├── funnel_analysis_final_report.csv      # Complete summary
-│   └── funnel_summary_final.csv              # Key KPIs
-│
-├── images/
-│   ├── funnel_chart.png
-│   ├── channel_performance.png
-│   ├── revenue_pie.png
-│   ├── pages_vs_conversion.png
-│   ├── device_performance.png
-│   ├── demographic_analysis.png
-│   ├── engagement_heatmap.png
-│   ├── geographic_performance.png
-│   └── complete_dashboard.png
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-📊 Key Findings
-1. Conversion Funnel & Drop-offs
-Stage	Users	Drop-off	Status
-Sessions	30,000	-	-
-Engaged (No Bounce)	24,327	18.9%	✅ Good
-Converted	4,535	81.4%	🔴 Critical
-Purchased	2,992	34.0%	🟡 Moderate
-Critical Finding: 81.4% of engaged users drop off before converting. This is the biggest opportunity for improvement.
+Question & Answer.
+Where are users dropping off?
+-81.4% drop between engagement and conversion
+Which channel performs best?
+-Referral (10.4% purchase rate)
+What is lead-to-customer rate?
+-9.97% (2,992 purchases from 30,000 sessions)
+How to improve conversion?
+-Cart abandonment emails, mobile optimization, channel reallocation
 
-2. Channel Performance
-Channel	Purchase Rate	Revenue	Rank
-Referral	10.4%	$80,617	🏆 #1
-Organic	10.1%	$412,922	#2
-Paid	9.8%	$150,138	#3
-Social	9.6%	$142,580	#4
+## 📊 Key Findings
 
-4. Device Performance
-Device	Purchase Rate	Sessions
-Tablet	10.2%	3,039
-Desktop	10.0%	8,953
-Mobile	9.9%	18,008
+### 1. Conversion Funnel & Drop-offs
 
-6. Demographic Insights
-Segment	Purchase Rate
-Old Adults	10.1%
-Adults	9.9%
-Teenage	9.9%
-Female	10.0%
-Male	9.9%
+| Stage | Users | Drop-off | Status |
+|-------|-------|----------|--------|
+| Sessions | 30,000 | - | - |
+| Engaged (No Bounce) | 24,327 | 18.9% | ✅ Good |
+| Converted | 4,535 | 81.4% | 🔴 Critical |
+| Purchased | 2,992 | 34.0% | 🟡 Moderate |
+
+**Critical Finding:** 81.4% of engaged users drop off before converting. This is the biggest opportunity for improvement.
+
+---
+
+### 2. Channel Performance
+
+| Channel | Purchase Rate | Revenue | Rank |
+|---------|---------------|---------|------|
+| Referral | 10.4% | $80,617 | 🏆 #1 |
+| Organic | 10.1% | $412,922 | #2 |
+| Paid | 9.8% | $150,138 | #3 |
+| Social | 9.6% | $142,580 | #4 |
+
+---
+
+### 3. Device Performance
+
+| Device | Purchase Rate | Sessions |
+|--------|---------------|----------|
+| Tablet | 10.2% | 3,039 |
+| Desktop | 10.0% | 8,953 |
+| Mobile | 9.9% | 18,008 |
+
+---
+
+### 4. Demographic Insights
+
+| Segment | Purchase Rate |
+|---------|---------------|
+| Old Adults | 10.1% |
+| Adults | 9.9% |
+| Teenage | 9.9% |
+| Female | 10.0% |
+| Male | 9.9% |
+
+---
 
 📈 Visualizations Included
 #	Chart	Purpose
