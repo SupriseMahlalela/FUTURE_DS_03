@@ -6,12 +6,18 @@ Dataset: 30,000 user sessions with traffic source, device, demographic, and conv
 
 🎯 Key Business Questions Answered
 Question & Answer.
-Where are users dropping off?
--81.4% drop between engagement and conversion
+* Where are users dropping off? >> 81.4% drop between engagement and conversion.
+* Which channel performs best? >> Referral (10.4% purchase rate)
+* What is lead-to-customer rate? >> 9.97% (2,992 purchases from 30,000 sessions)
+* How to improve conversion? >> Cart abandonment emails, mobile optimization, channel reallocation.
+
+
 Which channel performs best?
 -Referral (10.4% purchase rate)
+
 What is lead-to-customer rate?
 -9.97% (2,992 purchases from 30,000 sessions)
+
 How to improve conversion?
 -Cart abandonment emails, mobile optimization, channel reallocation
 
