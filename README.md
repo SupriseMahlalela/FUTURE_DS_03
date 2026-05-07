@@ -61,18 +61,25 @@ Dataset: 30,000 user sessions with traffic source, device, demographic, and conv
 ---
 
 📈 Visualizations Included
-#	Chart	Purpose
-1	Funnel Chart	Show drop-off at each stage
-2	Channel Bar Chart	Compare channel performance
-3	Revenue Pie Chart	Revenue distribution by channel
-4	Pages Line Chart	Pages visited vs conversion
-5	Device Bar Chart	Performance by device type
-6	Demographic Chart	Age & gender comparison
-7	Engagement Heatmap	Pages vs bounce relationship
-8	Geographic Chart	Top 10 countries performance
-9	Complete Dashboard	All key visuals combined
+1. Funnel Chart
+   * Show drop-off at each stage.
+2. Channel Bar Chart
+   * Compare channel performance.
+3. Revenue Pie Chart.
+   * Revenue distribution by channel.
+4. Pages Line Chart
+   * Pages visited vs conversion.
+5. Device Bar Chart
+   * Performance by device type.
+6. Demographic Chart.
+   * Age & gender comparison.
+7. Engagement Heatmap.
+   * Pages vs bounce relationship.
+8. Geographic Chart.
+   * Top 10 countries performance
+9. Complete Dashboard.
+   * All key visuals combined
 
----
 
 ## 🛠️ Technologies Used
 
@@ -89,11 +96,13 @@ Dataset: 30,000 user sessions with traffic source, device, demographic, and conv
 ## 📦 Setup
 
 **Install dependencies:**
-```bash
+
 pip install pandas numpy matplotlib jupyter dask[dataframe]
 
 📦 Installation & Setup
+
 Prerequisites
+
 bash
 Python 3.8+
 Power BI Desktop (free)
@@ -140,7 +149,7 @@ Country
 
 📊 Key DAX Measures Used in Power BI
 dax
-// Basic Metrics
+/Basic Metrics7/
 Total Sessions = COUNTROWS(CleanedSpeakerData_fixed)
 Total Revenue = SUMX(CleanedSpeakerData_fixed, VALUE(CleanedSpeakerData_fixed[revenue_$]))
 Total Purchases = CALCULATE(COUNTROWS(CleanedSpeakerData_fixed), CleanedSpeakerData_fixed[conversion_type] = "Purchase")
