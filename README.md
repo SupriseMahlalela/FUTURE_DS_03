@@ -78,7 +78,7 @@ This project provides a complete marketing funnel analysis to identify conversio
 | 3 | Revenue Pie Chart | Revenue distribution by channel |
 | 4 | Pages Line Chart | Pages visited vs conversion |
 | 5 | Device Bar Chart | Performance by device type |
-| 6n| Geographic Chart | Top 10 countries performance |
+| 6 | Geographic Chart | Top 10 countries performance |
 | 7 | Complete Dashboard | Combined executive dashboard |
 
 ---
@@ -324,6 +324,7 @@ FUTURE_DS_03/
 
 - GitHub: https://github.com/SupriseMahlalela
 - Repository: https://github.com/SupriseMahlalela/FUTURE_DS_03
+- LinkedIn: www.linkedin.com/in/suprise-mahlalela-9b4b63381
 
 ### Project Purpose
 Marketing Analytics Portfolio Project
