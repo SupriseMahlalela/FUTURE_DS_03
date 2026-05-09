@@ -109,17 +109,21 @@ Power BI Desktop (free)
 Python Setup
 bash
 # Clone repository
-git clone [your-repo-link]
-cd marketing-funnel-analysis
+git clone [https://github.com/SupriseMahlalela/FUTURE_DS_03]
+
 
 # Install dependencies
 pip install -r requirements.txt
 requirements.txt:
+- pandas==2.0.3
+- numpy==1.24.3
+- matplotlib==3.7.1
+- jupyter==1.0.0
+- dask[dataframe]==2023.6.0
+# Run Analysis
+bash
 
-txt
-pandas==2.0.3
-numpy==1.24.3
-matplotlib==3.7.1
+matplotlib==3.7.1 
 jupyter==1.0.0
 dask[dataframe]==2023.6.0
 Run Analysis
@@ -128,12 +132,12 @@ bash
 jupyter notebook
 
 # Run notebooks in order:
-01_complete_analysis.ipynb
+01_complete_analysis.ipynb||
 02_visualizations.ipynb
 Power BI Dashboard
 Download Power BI Desktop (free)
 
-Open powerbi/funnel_dashboard.pbix
+Open powerbi/ConversionDashboard.pbix
 
 Refresh data connection
 
@@ -143,7 +147,7 @@ Traffic Source (Organic, Paid, Social, Referral)
 
 Device Type (Desktop, Mobile, Tablet)
 
-Age Group (Teenage, Adult, Old)
+Location (Tokyo, Beijing, Moscow, Lyon)
 
 Country
 
@@ -195,26 +199,7 @@ Lead-to-Customer Rate	9.97%	12.97%	+30%
 Cart Abandonment	81.4%	65%	-20%
 Revenue	$786,256	$936,000	+$150K
 
-📁 Generated Reports (CSV Files)
-After running notebooks, these files are created:
 
-File	Content
-channel_performance.csv	Purchase rate & revenue by channel
-demographic_analysis.csv	Conversion by age & gender
-funnel_analysis_final_report.csv	Complete metrics summary
-funnel_summary_final.csv	Key KPIs
-🔧 Data Types Used (Critical for Accuracy)
-Column	Data Type	Why
-user_id, session_id	Text	IDs, not math
-demographic_age	Whole Number	For calculations
-revenue_$	Decimal Number	Money values
-conversion_flag	Whole Number (0/1)	Flags for counting
-bounce_flag	Whole Number (0/1)	Flags for counting
-pages_visited	Whole Number	Counts
-traffic_source	Text	Categories
-device_type	Text	Categories
-timestamp	Date/Time	Time analysis
-Important: Rate measures return decimal (0.0997), then format as Percentage in Power BI (shows 9.97%). Never multiply by 100 in DAX.
 
 📝 Author
 [Suprise Mahlalela]
