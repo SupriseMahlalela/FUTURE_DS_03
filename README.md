@@ -109,8 +109,6 @@ Power BI Desktop (free)
 Python Setup
 bash
 # Clone repository
-git clone [your-repo-link]
-cd marketing-funnel-analysis
 git clone [https://github.com/SupriseMahlalela/FUTURE_DS_03]
 
 
@@ -160,28 +158,6 @@ Location (Tokyo, Beijing, Moscow, Lyon)
 
 Country
 
-📊 Key DAX Measures Used in Power BI
-dax
-/Basic Metrics7/
-Total Sessions = COUNTROWS(CleanedSpeakerData_fixed)
-Total Revenue = SUMX(CleanedSpeakerData_fixed, VALUE(CleanedSpeakerData_fixed[revenue_$]))
-Total Purchases = CALCULATE(COUNTROWS(CleanedSpeakerData_fixed), CleanedSpeakerData_fixed[conversion_type] = "Purchase")
-
-// Conversion Rates (returns decimal, format as Percentage)
-Purchase Rate = DIVIDE([Total Purchases], [Total Sessions])
-Bounce Rate = DIVIDE(CALCULATE(COUNTROWS(CleanedSpeakerData_fixed), CleanedSpeakerData_fixed[bounce_flag] = 1), [Total Sessions])
-
-// Drop-off Rates
-Drop Engaged to Converted = DIVIDE([Engaged Sessions] - [Converted Sessions], [Engaged Sessions])
-
-// Channel Performance
-Channel Purchase Rate = 
-VAR CurrentChannel = SELECTEDVALUE(CleanedSpeakerData_fixed[traffic_source])
-RETURN
-DIVIDE(
-CALCULATE([Total Purchases], CleanedSpeakerData_fixed[traffic_source] = CurrentChannel),
-CALCULATE([Total Sessions], CleanedSpeakerData_fixed[traffic_source] = CurrentChannel)
-)
 💡 Recommendations
 Priority 1: Fix Engagement → Conversion Drop (81.4%)
 Action	Expected Impact
@@ -208,26 +184,6 @@ Lead-to-Customer Rate	9.97%	12.97%	+30%
 Cart Abandonment	81.4%	65%	-20%
 Revenue	$786,256	$936,000	+$150K
 
-📁 Generated Reports (CSV Files)
-After running notebooks, these files are created:
-
-File	Content
-channel_performance.csv	Purchase rate & revenue by channel
-demographic_analysis.csv	Conversion by age & gender
-funnel_analysis_final_report.csv	Complete metrics summary
-funnel_summary_final.csv	Key KPIs
-🔧 Data Types Used (Critical for Accuracy)
-Column	Data Type	Why
-user_id, session_id	Text	IDs, not math
-demographic_age	Whole Number	For calculations
-revenue_$	Decimal Number	Money values
-conversion_flag	Whole Number (0/1)	Flags for counting
-bounce_flag	Whole Number (0/1)	Flags for counting
-pages_visited	Whole Number	Counts
-traffic_source	Text	Categories
-device_type	Text	Categories
-timestamp	Date/Time	Time analysis
-Important: Rate measures return decimal (0.0997), then format as Percentage in Power BI (shows 9.97%). Never multiply by 100 in DAX.
 
 
 📝 Author
@@ -235,56 +191,23 @@ Important: Rate measures return decimal (0.0997), then format as Percentage in P
 
 Purpose: Marketing Analytics Portfolio Project
 
-Date: May 2026
-
-🙏 Acknowledgments
-Dataset provided for marketing analytics learning
-
-Built as complete end-to-end analytics project
-
-📧 Contact
-For questions or feedback: [mahlalelasuprise57@gmail.com]
-
-🔗 Quick Navigation
-Analysis Notebook
-
-Visualizations Notebook
-
-Power BI Dashboard
-
-⭐ If you find this project helpful, please give it a star!
-
-📝 Author
-Suprise Mahlalela
-
-GitHub: https://github.com/SupriseMahlalela
-
-Project Repository: https://github.com/SupriseMahlalela/FUTURE_DS_03
-
-Purpose: Marketing Analytics Portfolio Project
-
-Date: May 2026
-
-🙏 Acknowledgments
-Dataset provided for marketing analytics learning purposes
-
-Built as a complete end-to-end analytics portfolio project
-
-Special thanks to open-source tools and community
+🙏 Acknowledgments:
+* Dataset provided for marketing analytics learning
+* Built as complete end-to-end analytics project
 
 📧 Contact
 For questions or feedback, please open an issue on the GitHub repository.
 
 🔗 External Resources
-Power BI Desktop Download
+- Power BI Desktop Download
 
-Python Download
+- Python Download
 
-Jupyter Notebook Installation Guide
+-Jupyter Notebook Installation Guide
 
-Pandas Documentation
+- Pandas Documentation
 
-DAX Reference Guide
+- DAX Reference Guide
 
 <div align="center">
 ⭐ If this project helped you, please give it a star on GitHub! ⭐
